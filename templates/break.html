@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>JiYu Strike - 登录</title>
+<link rel="icon" href="static/favicon.ico" type="static/image/ico">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="static/css/style.min.css" rel="stylesheet">
+<style>
+.lyear-wrapper {
+    position: relative;
+}
+.form-control{color:#FFF!important}
+.lyear-login {
+    display: flex !important;
+    min-height: 100vh;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.lyear-login:after{
+    content: '';
+    min-height: inherit;
+    font-size: 0;
+}
+.login-center {
+    background-color: rgba(255,255,255,.075);
+    min-width: 29.25rem;
+    padding: 2.14286em 3.57143em;
+    border-radius: 3px;
+    margin: 2.85714em;
+	
+}
+.login-header {
+    margin-bottom: 1.5rem !important;
+}
+.login-center .has-feedback.feedback-left .form-control {
+    padding-left: 38px;
+    padding-right: 12px;
+    background-color: rgba(255,255,255,.075);
+    border-color: rgba(255,255,255,.075)
+}
+.login-center .has-feedback.feedback-left .form-control-feedback {
+    left: 0;
+    right: auto;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    z-index: 4;
+    color: #dcdcdc;
+}
+.login-center .has-feedback.feedback-left.row .form-control-feedback {
+    left: 15px;
+}
+.login-center .form-control::-webkit-input-placeholder{ 
+    color: rgba(255, 255, 255, .8);
+} 
+.login-center .form-control:-moz-placeholder{ 
+    color: rgba(255, 255, 255, .8);
+} 
+.login-center .form-control::-moz-placeholder{ 
+    color: rgba(255, 255, 255, .8);
+} 
+.login-center .form-control:-ms-input-placeholder{ 
+    color: rgba(255, 255, 255, .8);
+}
+.login-center .custom-control-label::before {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.login-center .lyear-checkbox span::before {
+    border-color: rgba(255,255,255,.075)
+}
+	.fp{
+		float: right;
+		color:#FFF;
+		
+	}
+	.form-control{color:#FFF!important}
+</style>
+</head>
+  
+<body>
+<div class="row lyear-wrapper" style="background-image: url(static/images/login.png); background-size: cover;">
+  <div class="lyear-login">
+    <div class="login-center">
+      <div class="login-header text-center">
+        
+      </div>
+		 <div align="center"><p style="color:#FFF;font-size: 20px;">
+			 脱离控制</p>
+			 </br>
+		<p style="color:#FFF;font-size: 15px;">使用本页面下载的工具可以让你在教师端全屏广播的时候</p>
+		<p style="color:#FFF;font-size: 15px;">窗口化播放,从而达到边听边练的效果</P>
+	  <p style="color:#FFF;font-size: 15px;">PS:下载exe程序浏览器报毒是正常情况，选择保留即可</P>
+	  <button type="button" class="btn btn-info btn-w-md" onclick="javascrtpt:window.location.href='/download'">下载程序</button>
+		</div>
+      <br/>
+	
+		
+      <footer class="col-sm-12 text-center text-white">
+        <p class="m-b-0">Copyright &copy; 2022.<a href="https://rerizon.cn"> Yi</a> All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+</body>
+</html>

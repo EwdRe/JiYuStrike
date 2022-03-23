@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Jiyu Strike-By Yi</title>
+<link rel="icon" href="static/favicon.ico" type="image/ico">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="static/css/style.min.css" rel="stylesheet">
+</head>
+  
+<body>
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    <!--左侧导航-->
+    <aside class="lyear-layout-sidebar">
+      
+      <!-- logo -->
+      <div id="logo" class="sidebar-header">
+        <a href="index.html"><img src="static/images/logo-sidebar.png" title="LightYear" alt="LightYear" /></a>
+      </div>
+      <div class="lyear-layout-sidebar-scroll"> 
+        
+        <nav class="sidebar-main">
+          <ul class="nav nav-drawer">
+            <li class="nav-item active"> <a href="/"><i class="mdi mdi-home"></i> 首页 </a> </li>
+            <li class="nav-item nav-item-has-subnav">
+               <a href="/break"><i class="mdi mdi-cursor-pointer"></i>脱离控制</a>
+				 <a href="/file"><i class="mdi mdi-file"></i>文件下载</a>
+			  <a href="/control"><i class="mdi mdi-desktop-tower"></i>控制靶机</a>
+              <a href="/group"><i class="mdi mdi-server"></i>群控管理</a>
+            </li>
+            
+            
+            
+            <li class="nav-item nav-item-has-subnav">
+              <a href="/setting"><i class="mdi mdi-settings"></i> 设置</a>
+              
+        </nav>
+        
+         
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright &copy; 2022.<a href="https://rerizon.cn">Yi</a> All rights reserved.</p>
+        </div>
+      </div>
+      
+    </aside>
+    <!--End 左侧导航-->
+    
+    <!--头部信息-->
+    <header class="lyear-layout-header">
+      
+      <nav class="navbar navbar-default">
+        <div class="topbar">
+          
+          <div class="topbar-left">
+            <div class="lyear-aside-toggler">
+              <span class="lyear-toggler-bar"></span>
+              <span class="lyear-toggler-bar"></span>
+              <span class="lyear-toggler-bar"></span>
+            </div>
+            <span class="navbar-page-title"> Jiyu Strike {{room}}机房</span>
+			 
+          </div>
+          
+          <ul class="topbar-right">
+            <li class="dropdown dropdown-profile">
+              <a href="javascript:void(0)" data-toggle="dropdown">
+                <img class="img-avatar img-avatar-48 m-r-10" src="static/images/users/avatar.jpg" alt="RHY" /> 
+				  <span>{{power}}&nbsp;</span>
+                <span> {{user}}<span class="caret"></span></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+              
+                <li> <a href="javascript:void(0)"><i class="mdi mdi-delete"></i> 清空缓存</a></li>
+                <li class="divider"></li>
+                <li> <a href="/clear_login"><i class="mdi mdi-logout-variant"></i> 退出登录</a> </li>
+              </ul>
+            </li>
+            <!--切换主题配色-->
+		    <li class="dropdown dropdown-skin">
+			  <span data-toggle="dropdown" class="icon-palette"><i class="mdi mdi-palette"></i></span>
+			  <ul class="dropdown-menu dropdown-menu-right" data-stopPropagation="true">
+                <li class="drop-title"><p>主题</p></li>
+                <li class="drop-skin-li clearfix">
+                  <span class="inverse">
+                    <input type="radio" name="site_theme" value="default" id="site_theme_1" checked>
+                    <label for="site_theme_1"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="site_theme" value="dark" id="site_theme_2">
+                    <label for="site_theme_2"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="site_theme" value="translucent" id="site_theme_3">
+                    <label for="site_theme_3"></label>
+                  </span>
+                </li>
+			    <li class="drop-title"><p>LOGO</p></li>
+				<li class="drop-skin-li clearfix">
+                  <span class="inverse">
+                    <input type="radio" name="logo_bg" value="default" id="logo_bg_1" checked>
+                    <label for="logo_bg_1"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_2" id="logo_bg_2">
+                    <label for="logo_bg_2"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_3" id="logo_bg_3">
+                    <label for="logo_bg_3"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_4" id="logo_bg_4">
+                    <label for="logo_bg_4"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_5" id="logo_bg_5">
+                    <label for="logo_bg_5"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_6" id="logo_bg_6">
+                    <label for="logo_bg_6"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_7" id="logo_bg_7">
+                    <label for="logo_bg_7"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="logo_bg" value="color_8" id="logo_bg_8">
+                    <label for="logo_bg_8"></label>
+                  </span>
+				</li>
+				<li class="drop-title"><p>头部</p></li>
+				<li class="drop-skin-li clearfix">
+                  <span class="inverse">
+                    <input type="radio" name="header_bg" value="default" id="header_bg_1" checked>
+                    <label for="header_bg_1"></label>                      
+                  </span>                                                    
+                  <span>                                                     
+                    <input type="radio" name="header_bg" value="color_2" id="header_bg_2">
+                    <label for="header_bg_2"></label>                      
+                  </span>                                                    
+                  <span>                                                     
+                    <input type="radio" name="header_bg" value="color_3" id="header_bg_3">
+                    <label for="header_bg_3"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="header_bg" value="color_4" id="header_bg_4">
+                    <label for="header_bg_4"></label>                      
+                  </span>                                                    
+                  <span>                                                     
+                    <input type="radio" name="header_bg" value="color_5" id="header_bg_5">
+                    <label for="header_bg_5"></label>                      
+                  </span>                                                    
+                  <span>                                                     
+                    <input type="radio" name="header_bg" value="color_6" id="header_bg_6">
+                    <label for="header_bg_6"></label>                      
+                  </span>                                                    
+                  <span>                                                     
+                    <input type="radio" name="header_bg" value="color_7" id="header_bg_7">
+                    <label for="header_bg_7"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="header_bg" value="color_8" id="header_bg_8">
+                    <label for="header_bg_8"></label>
+                  </span>
+				</li>
+				<li class="drop-title"><p>侧边栏</p></li>
+				<li class="drop-skin-li clearfix">
+                  <span class="inverse">
+                    <input type="radio" name="sidebar_bg" value="default" id="sidebar_bg_1" checked>
+                    <label for="sidebar_bg_1"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_2" id="sidebar_bg_2">
+                    <label for="sidebar_bg_2"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_3" id="sidebar_bg_3">
+                    <label for="sidebar_bg_3"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_4" id="sidebar_bg_4">
+                    <label for="sidebar_bg_4"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_5" id="sidebar_bg_5">
+                    <label for="sidebar_bg_5"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_6" id="sidebar_bg_6">
+                    <label for="sidebar_bg_6"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_7" id="sidebar_bg_7">
+                    <label for="sidebar_bg_7"></label>
+                  </span>
+                  <span>
+                    <input type="radio" name="sidebar_bg" value="color_8" id="sidebar_bg_8">
+                    <label for="sidebar_bg_8"></label>
+                  </span>
+				</li>
+			  </ul>
+			</li>
+            <!--切换主题配色-->
+          </ul>
+          
+        </div>
+      </nav>
+      
+    </header>
+    <!--End 头部信息-->
+    
+    <!--页面主要内容-->
+  
+	 <main class="lyear-layout-content">
+      
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <ul class="nav nav-tabs page-tabs">
+                  <li class="active"> <a href="/control">信息</a> </li>
+                <li> <a href="/cmd">命令</a> </li>
+                <li> <a href="/sys">系统</a> </li>
+              </ul>
+				
+		<div class="alert alert-danger" role="alert"><span class="mdi mdi-ghost"></span> 操作均会记录日志，请谨慎操作</div>
+              <div class="tab-content">
+                <div class="tab-pane active">
+                  
+                 
+                    <div class="form-group">
+                      <label for="web_site_title">请选择靶机：</label>                 
+                      <select class="form-control" id="row" name="row_value" size="1">
+                           <option value="0">请选择排数</option>
+                           <option value="1">第1排</option>
+                           <option value="2">第2排</option>
+						   <option value="3">第3排</option>
+						   <option value="4">第4排</option>
+						   <option value="5">第5排</option>
+						   <option value="6">第6排</option>
+						   <option value="7">第7排</option>
+						   <option value="8">第8排</option>
+						   <option value="9">第9排</option>
+						   <option value="10">第10排</option>
+						  
+						  
+                      </select>
+						</br>
+						<select class="form-control" id="column" name="column_value" size="1">
+                           <option value="0">请选择座位号</option>
+                           <option value="1">第1号</option>
+                           <option value="2">第2号</option>
+						   <option value="3">第3号</option>
+						   <option value="4">第4号</option>
+						   <option value="5">第5号</option>
+						   <option value="6">第6号</option>
+						   <option value="7">第7号</option>
+						   <option value="8">第8号</option>
+						   <option value="9">第9号</option>
+						   <option value="10">第10号</option>
+						  
+						  
+                      </select>
+                 
+                      
+                    </div>
+                    
+				
+					
+					
+               
+                  
+                    <div class="form-group">
+                      <label for="msg">发送信息</label>
+                      <input class="form-control" type="text" name="msg" value="" id="msg" placeholder={{on}}>
+                     </small>
+                    </div>
+                   
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary m-r-5" id="send">确 定</button>
+                      <button type="button" class="btn btn-default" onclick="javascrtpt:window.location.href='/'">返 回</button>
+                    </div>
+         
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </main>
+    <!--End 页面主要内容-->
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/perfect-scrollbar.min.js"></script>
+<script src="static/js/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="static/js/lightyear.js"></script>
+<script type="text/javascript" src="static/js/main.min.js"></script>
+	  
+	  <script>
+		  
+     $('#send').click(function(){
+	 var row_value = $("#row").find("option:selected").val();
+	 var column_value = $("#column").find("option:selected").val();
+	 var input = document.getElementsByName('msg')[0];
+	 mesg  =input.value
+	 lightyear.loading('show');
+  $.post("/control",
+  {
+    row_value:row_value,
+    column_value:column_value,
+	  msg:mesg,
+  },
+  function(data){
+	  lightyear.loading('hide');
+    lightyear.notify('消息发送'+data+'~', 'success', 3000); 
+  });
+});
+		  
+		  
+	  
+</script>
+
+	
+</body>
+</html>
